@@ -1,0 +1,1044 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+    
+    font-size: 16px;
+    font-family: "avenir next" , sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-color: #020203;
+    color: #E19728;
+    
+}
+
+
+body main {
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10rem;
+
+}
+
+/*Felles h1 for alle på nettsiden*/ 
+main h2 {
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    border-top: 2px solid #E19728;
+    position: relative;
+    width: 30%;
+    left: 35%; 
+    padding-top: 1rem;
+ 
+}
+
+/*Headerbilde*/
+.hederbilde {
+
+    background-image: url("../Images/knivheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative; 
+    height: 700px;
+    width: 100%;
+
+}
+
+.artikkelnavn {
+
+    font-size: 10vw;
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    padding: 14% 0;
+    
+}
+
+nav {     
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+    right: 0;
+    transition: 0.9s;
+    
+}
+
+nav > a {
+    
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    color: white;
+    padding:  20px 60px 10px 60px;
+    transition: 0.5s;
+
+}
+
+nav > a:hover {
+
+    color: #E19728;
+
+}
+
+.venstestilt {
+
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    padding:  20px 0px;
+    transition: 0.5s;
+
+}
+
+.venstestilt > a {
+
+    text-decoration-line: none; 
+    color: white;
+    padding-right: 52rem;
+    
+} 
+
+.venstestilt > a:hover {
+
+    color: #E19728;
+
+} 
+
+/*section 1 */
+.s1  {
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+ 
+}
+
+.s1 > div {
+
+    font-weight: 100;
+    display: inline-grid;
+    grid-template-columns: 549px 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    color: white;
+   
+}
+
+.s1 h3 {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.s1 .venstre {
+
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+
+.hoyere {
+
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: justify;
+    border-left: 1.5px solid #E19728;
+    padding-left: 3rem;
+  
+}
+
+/*section 2*/
+.s2 {
+   
+    padding-top: 170px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding-bottom: 160px;
+    width: 100%;
+    background-image: url("../Images/knivbilde.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+
+}
+
+.intoduksjon {
+
+    border: 1px solid #1d1413;
+    outline: 1px solid #bfb196;
+    outline-offset: -10px;
+    background-color: #1d1413;
+    height: 350px;
+    width: 270px;
+    margin: 0 auto; 
+     
+}
+
+.intoduksjon h3 {
+
+    padding-top: 55px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #bfb196;
+    
+}
+
+.intoduksjon p {
+
+    color: #bfb196;
+    margin: 25px 50px;
+    line-height: 150%;
+    text-align: justify;
+
+}
+
+/*section 3*/
+.s3 {
+
+    padding-top: 10rem;
+
+}
+
+.omkniven img {
+
+    width: 65%;
+    height: auto;
+    position: relative;
+
+}
+
+.posisjon {
+
+    padding-left: 60%;
+
+}
+
+.oppskrift {
+    
+    padding-top: 3rem;
+    height: 650px;
+    width: 270px;
+    position: absolute;
+    z-index: 2;
+      
+}
+
+.oppskrift h3 {
+
+    background-color:#322727;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 2rem 3rem;
+    padding-top: 30px;
+
+}
+
+.oppskrift p {
+
+    background-color:#322727;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: white;
+    margin: 0;
+    line-height: 3rem;
+    padding: 2rem 3rem;
+    padding-bottom: 1rem;
+    
+}
+
+.s3 span {
+
+    text-transform: uppercase;
+    border-bottom: 1px solid #E19728;
+    
+}
+
+/*section 4*/
+.s4  {
+
+    margin-top: 15rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-gap: 5rem;
+    color: white;
+
+} 
+
+.s4 h3 {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.venstreside {
+
+    border-right: 1.5px solid #E19728;
+    padding-right: 5rem;
+
+}
+
+.hoyeresidebilde {
+
+    background-image: url("../Images/måhapåtur.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    
+}
+
+/*section 5*/
+.s5 {
+
+    padding-top: 10rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.s5 h2 {
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+.s5 .lignende {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    padding-top: 5rem;
+    justify-content: center;
+
+}
+
+.mat1 {
+
+    height: 700px;
+    width: 300px;
+    grid-row: span 2;
+    background-image: url("../Images/oks.jpg");
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.mat2 {
+
+    height: 700px;
+    width: 300px;
+    background-image: url("../Images/flerekniver.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.mat3 {
+
+    height: 700px;
+    width: 300px;
+    background-image: url("../Images/spike.jpeg");
+    background-position: center;
+    background-size: cover;
+ 
+}
+
+/*section 6*/
+.s6 {
+
+    padding-top: 10rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.instagram {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding-bottom: 10rem;
+
+}
+
+.article1 {
+
+    background-image: url("../Images/utstyr.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+
+}
+
+.article2 {
+
+    background-image: url("../Images/tennebol.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;  
+
+}
+
+.article3 {
+
+    background-image: url("../Images/sten.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+    
+}
+
+.article4 {
+
+    background-image: url("../Images/kloveved.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;  
+
+}
+
+.article5 {
+
+    background-image: url("../Images/arbeidshender.jpg");
+    background-size: cover;
+    background-position: right;
+    min-height: 400px;
+    
+}
+
+.article6 {
+
+    background-image: url("../Images/fyreopp.jpg");
+    background-size: cover;
+    background-position: bottom;
+    min-height: 400px;
+    
+}
+
+/*Footer*/
+.wrapperlabel {
+
+    padding-bottom: 10rem;
+}
+
+footer {
+
+   min-height: 200px;
+    
+}
+
+footer h4 {
+
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+input {
+
+    padding: 1rem;
+    width: 30rem;
+    background-color: #020203;
+    border: 2px solid #E19728;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.centerbox {
+
+    text-align: center;
+
+}
+
+footer button {
+
+    height: 3rem;
+    background-color: #E19728;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 3.35rem;
+    font-size: 1rem;
+
+}
+
+footer h5 {
+
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+footer .kontakt {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1rem;
+    
+}
+
+.kontakt a {
+
+   color: #E19728;
+   text-decoration: none;
+   font-size: 1.5rem;
+
+}
+
+.avsluttingside img {
+
+    width: 100%;
+
+}
+
+/*ipad*/
+/*Headerbilde og nav*/
+@media only screen and (max-width: 768px) {
+
+    .venstestilt > a {
+
+        padding-right: 68px;
+
+    }
+
+    nav > a {
+
+        padding: 20px 60px 10px 1px;
+
+    } 
+
+
+    .hederbilde {
+
+        width: 100%;
+        height: 410px;
+
+    }
+
+    .s5 h2 {
+
+        font-size: 2rem;
+        width: 45%;
+        left: 28%;
+    }
+
+    body main {
+      
+        padding-bottom: 0rem;
+    }
+
+    .s6 h2 {
+
+        font-size: 2rem;
+        width: 45%;
+        left: 28%;
+    }
+
+}
+
+/*section 1*/
+@media only screen and (max-width: 1100px) {
+
+    .s1 {
+
+        margin-top: 6px;
+        margin-bottom: 5px;
+        padding-left: 5rem;
+        padding-right: 5rem
+
+    }
+
+    .s1 .venstre {
+
+        font-size: 1.3rem;
+    }
+
+    .s1 span {
+
+        font-size: 1.5rem;
+
+    }
+
+    .s1 div {
+
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+    }
+
+    .hoyere {
+
+        border-top: 1.5px solid #E19728;
+        padding-top: 4rem;
+        border-left: none; 
+        padding-left: 0;
+        font-size: 1rem;
+        
+    }
+
+
+}
+
+/*section 5*/
+@media only screen and (max-width: 1100px) {
+
+    .s5 {
+
+        margin-left: 2rem; 
+        margin-right: 2rem; 
+
+
+    }
+
+}
+
+/*section 2*/
+@media only screen and (max-width: 965px) {
+
+    .intoduksjon {
+
+        width: 235px;
+        height: 300px;
+
+    }
+
+    .intoduksjon h3 {
+
+        padding-top: 48px; 
+
+    }
+
+    .intoduksjon p {
+
+        width: 148px;
+        font-size: 14px;
+        height: 300px;
+        margin: 22px 42px;
+    }
+
+}
+
+/*section 4*/
+@media only screen and (max-width: 900px) {
+
+    .s4 {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-template-columns: 1fr; 
+
+    }
+
+    .venstreside {
+
+        border-right: none;
+        font-size: 1rem;
+        padding-right: 0rem;
+        border-bottom: 1.5px solid #E19728;
+        padding-bottom: 70px;
+
+    }
+
+    .s4 h3 {
+
+        font-size: 1.5rem;
+    
+    }
+
+    .oppskrift p {
+
+        font-size: 1rem;
+        line-height: 2.5rem;
+        padding-bottom: 1rem;
+    
+    }
+    
+}
+
+/*section 2*/
+@media only screen and (max-width: 768px) {
+
+    .s2 {
+    
+        display: none;
+
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*.s5 h2 {
+
+        font-size: 2rem;
+        width: 45%;
+        left: 28%;
+
+    }*/
+
+    .s5 .lignende {
+
+        padding-top: 4rem;
+        grid-gap: 1rem;
+    
+    }
+
+    .mat1 {
+    
+        width: 150px;
+        height: 500px;
+       
+    }
+    
+    .mat2 {
+
+        width: 150px;
+        height: 500px;
+    
+    }
+
+    .mat3 {
+
+        width: 150px;
+        height: 500px;
+        
+    }
+
+}
+
+/*section 6*/
+@media only screen and (max-width: 768px) {
+
+    .s6 {
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .instagram {
+
+        grid-gap: 20px;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .article1 {
+
+        min-height: 350px;
+
+    }
+
+    .article2 {
+
+        min-height: 200px;
+
+    }
+
+
+    .article3 {
+
+        min-height: 350px;
+
+    }
+
+    .article4 {
+
+        min-height: 350px;
+
+    }
+
+    .article5 {
+
+        min-height: 200px;
+    }
+
+    .article6 {
+
+        min-height: 200px;
+
+    }   
+
+}
+
+/*nav*/
+@media (max-width: 520px) {
+    
+    nav a {
+        
+        padding: 20px 9px 10px 20px;
+        justify-content: center;  
+        
+    } 
+
+}  
+
+/*section 3*/
+@media only screen and (max-width: 600px) {
+    
+
+    .s3 {
+
+        padding-top: 3rem;
+
+    }
+
+    .posisjon {
+
+        padding-left: 40%;
+
+    }
+
+    .omkniven img {
+
+        width: 75%;
+
+    }
+
+    .oppskrift p {
+
+        font-size: .7rem;
+        line-height: 1.8rem;
+        padding: 1rem 2rem;
+
+    }
+
+    .oppskrift h3 {
+
+        padding: 1rem 2rem;
+       
+    }
+
+    .oppskrift {
+      
+        width: 212px;
+        height: 350px;
+
+    }
+    
+}
+
+/*mobil*/
+@media only screen and (max-width: 414px) {
+
+    .hederbilde {
+
+        width: 100%;
+        height: 250px;
+
+    }
+
+    body main {
+      
+        padding-bottom: 0rem;
+    }
+
+}
+
+/*section 1*/
+@media only screen and (max-width: 414px) {
+    
+    .s1 {
+        
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+    
+}
+
+
+/*section 5*/
+@media only screen and (max-width: 414px) {    
+
+    .s5 {
+
+        margin-left: 2rem; 
+        margin-right: 2rem; 
+        padding-top: 4rem;
+
+    }
+
+    .s5 h2 {
+
+        font-size: 1.8rem;
+        height: 0; 
+        padding-bottom: 2rem;
+ 
+    }
+
+    .s5 .lignende {
+
+        padding-top: 1rem;
+        grid-gap: 1rem;
+
+    }
+
+    .mat1 {
+
+        max-width: 100px;
+        max-height: 200px;
+
+    }
+
+    .mat2 {
+
+        max-width: 100px;
+        max-height: 200px;
+
+    }
+
+    .mat3 {
+
+        max-width: 100px;
+        max-height: 200px;
+
+    }
+
+}
+
+/*section 6*/
+@media only screen and (max-width: 414px) {
+
+    .s6 {
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 4rem;
+
+    }
+
+    .s6 h2 {
+
+        width: 75%;
+        left: 13%;
+
+    }
+
+}
+
+ 
+/*footer*/
+@media only screen and (max-width: 414px) {
+    
+    .wrapperlabel {
+    
+        padding-bottom: 5rem;
+    
+    }
+    
+}
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h4 {
+    
+        font-size: 1.5rem;
+    
+    
+    }
+    
+}  
+    
+@media only screen and (max-width: 414px) {
+    
+    input {
+    
+        width: 14rem;
+        font-size: 0.8rem;
+
+    }
+    
+}   
+    
+@media only screen and (max-width: 414px) {
+    
+    footer button {
+
+        height: 3rem;
+        width: 5rem;
+        height: 3.24rem;
+        font-size: 0.8rem;
+
+    }
+    
+}
+      
+@media only screen and (max-width: 414px) {
+    
+    .kontakt a {
+    
+        font-size: 0.8em;
+        padding-left: 10px;
+    
+    }
+    
+}
+    
+    
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h5 {
+    
+        font-size: 1em;
+        padding-left: 10px;
+    
+    }
+    
+}
+
+
+
+
+
+

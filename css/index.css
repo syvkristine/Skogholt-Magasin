@@ -1,0 +1,1631 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-size: 16px;
+    font-family: "avenir next" , sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-color: #020203;
+    color: #E19728;
+    
+}
+
+body main {
+    margin: 0;
+    padding: 0;
+}
+
+/*Felles h1 for alle på nettsiden*/ 
+main h2 {
+
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    border-top: 2px solid #E19728;
+    position: relative;
+    width: 37%; 
+    left: 31%; 
+    padding-top: 2rem;
+    
+}
+
+.wrap {
+
+    position: relative;
+    
+} 
+
+.overlay {
+    position: absolute;
+    bottom: 0; 
+    top: 0;
+    background: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    transition: .9s cubic-bezier(.25,.46,.45,.94); 
+    opacity:0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+ 
+}
+
+.wrap:hover .overlay {
+
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+.scalewrapper {
+
+    min-height: 380px;
+    overflow: hidden;
+
+}
+
+/*Heder med meny*/
+.hederbilde img {
+
+    width: 100%;
+    position: relative;
+
+}
+
+.logo {
+
+    font-size: 10vw;
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    padding: 14% 0;
+    
+}
+
+nav {     
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+    right: 0;
+    transition: 0.9s;
+    
+}
+
+nav > a {
+    
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    color: white;
+    padding:  20px 60px 20px 60px;
+    transition: 0.5s;
+
+}
+
+nav > a:hover {
+
+    color: #E19728;
+
+}
+
+/*introduksjons tekst i toppen*/
+.introduksjontekst {
+
+    font-size: 3vw;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+/*introduksjons bokser section 1 */
+.s1 {
+    
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 160px;
+    width: 100%;
+    background-image: url("../Images/ekkorn.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; 
+
+}
+
+.intoduksjon {
+
+    border: 1px solid #1d1413;
+    outline: 1px solid #bfb196;
+    outline-offset: -10px;
+    background-color: #1d1413;
+    height: 350px;
+    width: 270px;
+    margin: 0 auto; 
+    
+}
+
+.intoduksjon h3 {
+
+    padding-top: 55px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #bfb196;
+    
+}
+
+.intoduksjon p {
+
+    color: #bfb196;
+    margin: 25px 50px;
+    line-height: 150%;
+    text-align: justify;
+
+}
+
+/*section 2 */
+.s2 {
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.høstensGaver {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+
+}
+
+.bol {
+
+    background-image: url("../Images/bål.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 2s ease;
+    display: block;
+    width: 100%;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.bol .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 35%;
+
+}
+
+.bol:hover {
+
+    transform: scale(1.1);
+
+}
+
+.hengekoye {
+
+    background-image: url("../Images/hengekoye.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.hengekoye .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 35%;
+
+}
+
+.hengekoye:hover {
+
+    transform: scale(1.1);
+
+}
+
+.par {
+
+    background-image: url("../Images/par.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.par .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 35%;
+    
+}
+
+.par:hover {
+
+    transform: scale(1.1);
+
+}
+
+/*section 3 */
+.s3 {
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.bildesection1 {
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 3rem;
+    min-height: 380px;
+
+}
+
+.kniv {
+
+    background-image: url("../Images/kniv.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.kniv .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.kniv:hover {
+
+    transform: scale(1.1);
+
+}
+
+.kakao {
+
+    background-image: url("../Images/kakao.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.kakao .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.kakao:hover{
+
+    transform: scale(1.1);
+
+}
+
+.bildesection2 {
+
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 40px;
+    min-height: 380px;
+    padding-top: 2.4rem;
+
+}
+
+.etpar {
+    
+    background-image: url("../Images/par.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.etpar .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.etpar:hover{
+
+    transform: scale(1.1);
+
+}
+
+.fugl {
+
+    background-image: url("../Images/fugl.jpg");
+    background-size: cover;
+    background-position: bottom;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.fugl .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.fugl:hover{
+
+    transform: scale(1.1);
+
+}
+
+.bildesection3 {
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 40px;
+    min-height: 380px;
+    padding-top: 2.4rem;
+
+}
+
+.dropteltet {
+
+    background-image: url("../Images/dropteltet.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.dropteltet .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.dropteltet:hover{
+
+    transform: scale(1.1);
+
+}
+
+.dyr {
+
+    background-image: url("../Images/ekkorn.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.dyr .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.dyr:hover{
+
+    transform: scale(1.1);
+
+}
+
+.bildesection4 {
+
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 40px;
+    min-height: 380px;
+    padding-top: 2.4rem;
+
+}
+
+.kantarell {
+
+    background-image: url("../Images/kantarel.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.kantarell .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.kantarell:hover{
+
+    transform: scale(1.1);
+
+}
+
+.sopp {
+
+    background-image: url("../Images/sopptre.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.sopp .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.sopp:hover{
+
+    transform: scale(1.1);
+
+}
+
+.bildesection5 {
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 40px;
+    min-height: 380px;
+    padding-top: 2.4rem;
+
+}
+
+.bortur {
+    
+    background-image: url("../Images/bortur.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.bortur .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.bortur:hover {
+
+    transform: scale(1.1);
+
+}
+
+.skogsbor {
+
+    background-image: url("../Images/skogsbor.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.skogsbor .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.skogsbor:hover {
+
+    transform: scale(1.1);
+
+}
+
+.bildesection6 {
+
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 40px;
+    min-height: 380px;
+    padding-top: 2.4rem;
+
+}
+
+.skogenskonge {
+
+    background-image: url("../Images/Skogenskonge.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.skogenskonge .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 19%;
+    
+}
+
+.skogenskonge:hover {
+
+    transform: scale(1.1);
+
+}
+
+.bolS3 {
+
+    background-image: url("../Images/bolS3.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.bolS3 .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.bolS3:hover {
+
+    transform: scale(1.1);
+    
+}
+
+/*her starter section 4*/
+video {
+    
+    width: 100%;
+    height: 80%;
+
+}
+
+/*her starter section 5*/
+.s5 {
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.instagram {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding-bottom: 10rem;
+    
+}
+
+.instagram .tekst {
+
+    font-size: 2.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    margin-top: 37%;
+    
+}
+
+.article1 {
+
+    background-image: url("../Images/mettemat.jpg");
+    background-size: cover;
+    min-height: 700px;
+    grid-row: span 2;
+
+}
+
+.article2 {
+
+    background-image: url("../Images/mann.jpg");
+    background-size: cover;
+    min-height: 400px;
+
+}
+
+.article3 {
+
+    background-image: url("../Images/jessica2.jpg");
+    background-size: cover;
+    min-height: 700px;
+    grid-row: span 2;
+    
+}
+
+
+.article4 {
+
+    background-image: url("../Images/oks.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+
+}
+
+
+.article5 {
+
+    background-image: url("../Images/skogslys.jpg");
+    background-size: cover;
+    background-position: right;
+    min-height: 400px;
+
+}
+
+.article6 {
+
+    background-image: url("../Images/giftigsopp.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    
+}
+
+/*her starter footer*/
+/*label innput*/
+
+.wrapperlabel {
+
+    padding-bottom: 10rem;
+}
+
+footer {
+
+   min-height: 200px;
+    
+}
+
+footer h4 {
+
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+input {
+
+    padding: 1rem;
+    width: 30rem;
+    background-color: #020203;
+    border: 2px solid #E19728;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.centerbox {
+
+    text-align: center;
+
+}
+
+footer button {
+
+    height: 3rem;
+    background-color: #E19728;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 3.35rem;
+    font-size: 1rem;
+
+}
+
+/*kontakt oss*/
+
+footer h5 {
+
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+footer .kontakt {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1rem; 
+
+}
+
+.kontakt a {
+
+   color: #E19728;
+   text-decoration: none;
+   font-size: 1.5rem;
+
+}
+
+.avsluttingside img {
+
+    width: 100%;
+
+}
+
+/*her starter @media*/
+@media (max-width: 1000px){
+
+    .s1 {
+
+        display: none;
+    }
+
+    .høstensGaver {
+    
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+    
+
+/*IPad*/  
+/*section 1*/ 
+@media (max-width: 768px) {
+     
+
+    
+    .s1 {
+    
+        padding-bottom: 0px;
+    
+    }
+    
+    .s1 > div {
+    
+        margin-bottom: 16px;
+    
+    }
+
+}
+  
+/*section 1*/
+    
+@media only screen and (max-width: 768px) {
+    
+    .introduksjontekst {
+    
+        font-size: 4.2vw;
+    
+    }
+    
+}
+      
+@media only screen and (max-width: 768px) {
+    
+    .intoduksjon {
+    
+        width: 235px;
+        height: 300px;
+
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .intoduksjon h3 {
+    
+        padding-top: 48px; 
+    
+    }
+    
+}    
+    
+@media only screen and (max-width: 768px) {
+    
+    .intoduksjon p {
+    
+        width: 148px;
+        font-size: 14px;
+        height: 300px;
+        margin: 22px 42px; 
+    
+    }
+    
+}  
+    
+/*felles for h1 elementer*/
+@media only screen and (max-width: 768px) {
+    
+    main h2 {
+    
+        font-size: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+    }
+    
+}
+    
+/*section 2*/  
+@media only screen and (max-width: 768px) {
+    
+    .wrap:hover .overlay {
+    
+        cursor: auto;
+    
+    }
+    
+    
+    .scalewrapper {
+    
+        min-height: 200px;
+    
+    }
+    
+    .bol:hover {
+    
+        transform: none; 
+    }
+
+    
+    .hengekoye:hover {
+    
+        transform: none; 
+    
+    }
+    
+    
+    .par:hover {
+    
+        transform: none; 
+    
+    }
+    
+}
+        
+
+/*section 3*/ 
+@media only screen and (max-width: 768px) {
+
+    .høstensgaver {
+
+        width: 52%;
+        left: 25%; 
+    }
+    
+    .bildesection1 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 200px;
+    
+    }
+
+    
+    .bildesection1 .tekst{
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+        
+    }
+    
+    
+    .kniv {
+    
+        min-height: 200px;
+
+    }
+
+    
+    .kniv:hover {
+    
+        transform: none; 
+     
+    }
+
+    
+    .kakao{
+    
+        min-height: 200px;
+    
+    }
+    
+    .kakao:hover {
+    
+        transform: none; 
+
+    }
+
+    
+    .bildesection2 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 240px; 
+    }
+
+    
+    .bildesection2 .tekst {
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+    
+    }
+
+    .etpar{
+    
+        min-height: 200px;
+
+    }
+    
+    
+    .etpar:hover {
+    
+        transform: none; 
+
+    }
+
+    
+    .fugl{
+    
+        min-height: 200px;
+    
+    }
+    
+    .fugl:hover {
+    
+        transform: none; 
+
+    }
+
+    
+    .bildesection3 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 240px;
+    
+    }
+    
+    .bildesection3 .tekst {
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+    
+    }
+    
+    .dropteltet{
+    
+        min-height: 200px;
+    
+    }
+
+    
+    .dropteltet:hover {
+    
+        transform: none; 
+    
+    }
+    
+    .dyr{
+    
+        min-height: 200px;
+    
+    }
+    
+    .dyr:hover {
+    
+        transform: none; 
+    }
+    
+    .bildesection4 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 240px; 
+    
+    }
+
+    
+    .bildesection4 .tekst {
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+    }
+
+    
+    .kantarell{
+    
+        min-height: 200px;
+
+    }
+
+    
+    .kantarell:hover {
+    
+        transform: none; 
+
+    }
+    
+    .sopp{
+    
+        min-height: 200px;
+
+    }
+
+    
+    .sopp:hover {
+    
+        transform: none; 
+
+    }
+
+    
+    .bildesection5 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 240px;
+
+    }
+
+    
+    .bildesection5 .tekst{
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+
+    }
+    
+    
+    .bortur {
+    
+        min-height: 200px;
+    }
+
+    
+    .bortur:hover {
+    
+        transform: none; 
+
+    }
+
+    
+    .skogsbor{
+
+        min-height: 200px;
+
+    }
+    
+    
+    .skogsbor:hover {
+    
+        transform: none; 
+    
+    }
+    
+    
+    .bildesection6 {
+    
+        grid-template-columns: 1fr 1fr;
+        min-height: 240px;
+    
+    }
+    
+    
+    .bildesection6 .tekst {
+    
+        font-size: 1.5em;
+        margin-top: 39%;
+    
+    }
+    
+    
+    .skogenskonge {
+    
+        min-height: 200px;
+    
+    }
+    
+    
+    .skogenskonge:hover {
+    
+        transform: none; 
+
+    }
+    
+    
+    .bolS3 {
+    
+        min-height: 200px;
+    
+    
+    }
+    
+    
+    .bolS3:hover {
+    
+        transform: none; 
+    
+    
+    }
+    
+}
+    
+
+/*section 5*/
+    
+@media only screen and (max-width: 768px) {
+    
+    .instagram {
+    
+        grid-gap: 20px;
+
+    }
+
+    
+    .overlay {
+    
+        opacity: 100;
+
+    }
+    
+    
+    .instagram .tekst {
+    
+        font-size: 1em;
+    
+    }
+    
+    
+    .article1 {
+    
+        min-height: 350px;
+    
+    
+    }
+
+    
+    .article2 {
+    
+        min-height: 200px;
+    
+    
+    }
+    
+    .article3 {
+    
+        min-height: 350px;
+    
+    }
+    
+    .article4 {
+    
+        min-height: 350px;
+    
+    
+    }
+    
+    
+    .article5 {
+    
+        min-height: 200px;
+    
+    
+    }
+
+    .article6 {
+    
+        min-height: 200px;
+    
+    
+    }
+    
+}
+    
+    
+    
+/*footer*/
+@media only screen and (max-width: 768px) {
+    
+    input {
+    
+        width: 24rem;
+    
+    }
+    
+}
+    
+    
+    
+@media only screen and (max-width: 768px) {
+    
+    .kontakt a {
+    
+        font-size: 1em;
+    
+    
+    }
+    
+}
+     
+/*større skjerm tilpassing*/    
+@media (max-width: 520px) {
+    
+    nav a {
+        
+        padding: 20px 57px 10px 20px;
+        justify-content: center;  
+        
+    }
+
+}  
+
+
+    
+/*Tilpassing av Mobil telefon*/
+@media only screen and (max-width: 414px) {
+    
+    .logo {
+    
+        font-size: 11vw;
+    
+    }
+    
+}
+    
+    
+/*section 1*/ 
+@media only screen and (max-width: 414px) {
+    
+    .s1 {
+    
+        display: none;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 414px) {
+    
+    .introduksjontekst {
+        
+        font-size: 5vw;
+        
+    }
+        
+}
+
+    
+/*titler*/
+@media only screen and (max-width: 414px) {
+    
+    main h2 {
+    
+        font-size: 1.8rem;
+        margin-top: 6rem;
+        margin-bottom: 4rem; 
+    
+    } 
+    
+}
+    
+/*seksjon2*/
+@media only screen and (max-width: 414px) {
+    
+    
+    .høstensGaver {
+        
+        grid-gap: 40px;
+    }
+    
+    .mestlest {
+        
+        width: 75%;
+        left: 13%;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+        
+    }
+        
+}
+
+/*seksjon3*/
+@media only screen and (max-width: 414px) {
+    
+    .s3 {
+        
+        margin-left: 18px;
+        
+    }
+    
+    .scalewrapper {
+    
+        min-height: 200px;
+        min-width: 380px;
+    
+    }
+
+    
+    .bildesection3 {
+        
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+        
+    }
+    
+    
+    .høstensgaver {
+    
+        width: 75%;
+        left: 13%;
+        text-align: center;
+        font-size: 1.8rem;
+    
+    }
+
+    
+    .bildesection1 {
+    
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+
+    
+    }
+
+    
+    .bildesection2 {
+    
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+        
+    }
+
+    
+    .bildesection4 {
+    
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+        
+    
+    }
+    
+    .bildesection5 {
+        
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+        
+        
+    }
+    
+    .bildesection6 {
+    
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        min-width: 380px;
+        
+    
+    }
+    
+}  
+
+/*section 4 */
+@media only screen and (max-width: 414px) {
+    
+    .skogenshemmlighet {
+    
+        width: 75%;
+        left: 13%;
+        text-align: center;
+        font-size: 1.8rem;
+    
+    }
+    
+}
+
+/*section 5*/
+@media only screen and (max-width: 414px) {
+    
+    .s5 {
+    
+        margin-left: 19px;
+
+    }
+    
+    .skogholtinstagram {
+        
+        width: 75%;
+        left: 13%;
+        text-align: center;
+        font-size: 1.8rem;
+        
+    }
+    
+    .instagram {
+    
+        padding-bottom: 6rem;
+    
+    }
+
+    .instagram .tekst {
+    
+        font-size: 0.8em;
+    
+    }
+    
+    .article1 {
+    
+        min-height: 350px;
+        min-width: 112px;
+    
+    }
+    
+    .article2 {
+    
+        min-height: 200px;
+        min-width: 112px;
+
+    }
+
+    .article3 {
+    
+        min-height: 350px;
+        min-width: 112px;
+
+    }
+
+    .article4 {
+    
+        min-height: 350px;
+        min-width: 112px;
+    
+    }
+
+    .article5 {
+    
+        min-height: 200px;
+        min-width: 112px;
+    
+    }
+
+    .article6 {
+    
+        min-height: 200px;
+        min-width: 112px;
+    
+    }
+    
+}
+   
+/*footer*/
+@media only screen and (max-width: 414px) {
+    
+    .wrapperlabel {
+    
+        padding-bottom: 5rem;
+    
+    }
+    
+}
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h4 {
+    
+        font-size: 1.5rem;
+    
+    }
+    
+}  
+    
+@media only screen and (max-width: 414px) {
+    
+    input {
+    
+        width: 14rem;
+        font-size: 0.8rem;
+
+    }
+    
+}   
+    
+@media only screen and (max-width: 414px) {
+    
+    footer button {
+
+        height: 3rem;
+        width: 5rem;
+        height: 3.24rem;
+        font-size: 0.8rem;
+
+    }
+    
+}
+      
+@media only screen and (max-width: 414px) {
+    
+    .kontakt a {
+    
+        font-size: 0.8em;
+        padding-left: 10px;
+    
+    }
+    
+}
+    
+    
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h5 {
+    
+        font-size: 1em;
+        padding-left: 10px;
+    
+    }
+    
+}

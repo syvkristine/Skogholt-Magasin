@@ -1,0 +1,1122 @@
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    font-size: 16px;
+    font-family: "avenir next" , sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-color: #020203;
+    color: #E19728;
+    
+}
+
+body main {
+
+    margin: 0;
+    padding: 0;  
+
+}
+
+/*Felles h1 for alle på nettsiden*/ 
+main h2 {
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    border-top: 2px solid #E19728;
+    position: relative;
+    width: 30%;
+    left: 35%; 
+    padding-top: 1rem;
+
+}
+
+/*Header*/
+.hederbilde {
+
+    background-image: url("../Images/bortur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    height: 700px;
+    width: 100%;
+
+}
+
+.artikkelnavn {
+
+    font-size: 10vw;
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    padding: 14% 0;
+ 
+}
+
+
+nav {     
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+    right: 0;
+    transition: 0.9s;
+    
+
+}
+
+nav > a {
+    
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    color: white;
+    padding:  20px 60px 10px 60px;
+    transition: 0.5s;
+
+}
+
+nav > a:hover {
+
+    color: #E19728;
+
+}
+
+.venstestilt {
+
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    padding:  20px 0px;
+    transition: 0.5s;
+
+}
+
+.venstestilt > a {
+
+    text-decoration-line: none; 
+    color: white;
+    padding-right: 52rem;
+
+} 
+
+.venstestilt > a:hover {
+
+    color: #E19728;
+
+}
+
+/*section 1 */
+.s1  {
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+.s1 div {
+
+    font-weight: 100;
+    display: inline-grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 10rem;
+    align-items: center;
+    justify-items: center;
+    color: white;
+   
+}
+
+.s1 span {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+
+.s1 .venstre {
+
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.hoyere {
+
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: justify;
+    border-left: 1.5px solid #E19728;
+    padding-left: 3rem;
+ 
+}
+    
+/*section 2*/
+.s2 {
+   
+    padding-top: 170px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding-bottom: 160px;
+    width: 100%;
+    background-image: url("../Images/tyttebær.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
+
+}
+
+.intoduksjon {
+
+    border: 1px solid #1d1413;
+    outline: 1px solid #bfb196;
+    outline-offset: -10px;
+    background-color: #1d1413;
+    height: 350px;
+    width: 270px;
+    margin: 0 auto; 
+     
+}
+
+.intoduksjon h3 {
+
+    padding-top: 55px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #bfb196;
+    
+}
+
+.intoduksjon p {
+
+    color: #bfb196;
+    margin: 25px 51px;
+    line-height: 150%;
+    text-align: justify;
+
+}
+ 
+/*section 3*/
+.s3 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; 
+    margin-top: 8rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+     
+.s3 h3 {
+    
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+
+}
+  
+.s3 p {
+    
+    color: white;
+    line-height: 150%;
+    text-align: justify;
+    font-size: 1.1rem;
+
+}
+    
+/*section 4*/
+.s4 .posisjon {
+
+    padding-top: 10rem;
+    padding-left: 60%;
+  
+}
+
+.tyttebor img {
+  
+    height: auto;
+    width: 65%;
+
+}
+
+.oppskrift {
+
+    padding-top: 4rem;
+    height: 650px;
+    width: 240px;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.oppskrift h3 {
+ 
+    background-color: #4B020D;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 10px 45px;
+    padding-top: 30px;
+
+}
+
+.oppskrift > p {
+ 
+    background-color: #4B020D;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    margin: 0;
+    padding: 10px 45px;
+    padding-bottom: 30px;
+    font-style: italic;
+
+}
+
+/*section 5*/
+.s5  {
+
+    margin-top: 15rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+} 
+
+.s5 > div {
+
+    font-weight: 100;
+    display: grid;
+    grid-gap: 2rem;
+    color: white;
+    grid-template-columns: 250px 280px 1fr;
+   
+}
+
+.s5 h3 {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.center {
+
+    border-right: 1.5px solid #E19728;
+        
+}
+
+.hoyeresidebilde {
+
+    background-image: url("../Images/boriskogen.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+
+    
+}
+
+/*section 6*/
+.s6 {
+
+    padding-top: 10rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.s6 h2 {
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+.s6 .lignende {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    padding-top: 5rem;
+    justify-content: center;
+
+}
+
+.mat1 {
+
+    height: 700px;
+    width: 300px;
+    grid-row: span 3;
+    background-image: url("../Images/greska.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.mat2 {
+
+    height: 700px;
+    width: 300px;
+    margin-bottom: 40px;
+    background-image: url("../Images/skogsbor.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 1s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+.mat3 {
+
+    height: 700px;
+    width: 300px;
+    background-image: url("../Images/pai.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 2s cubic-bezier(.25,.46,.45,.94);
+
+}
+
+/*section 7*/
+.s7 {
+
+    padding-top: 10rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.instagram {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding-bottom: 10rem;
+ 
+}
+
+.article1 {
+
+    background-image: url("../Images/utstyr.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+
+}
+
+.article2 {
+
+    background-image: url("../Images/dessert.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    
+}
+
+.article3 {
+
+    background-image: url("../Images/hvitesopp.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+
+}
+
+.article4 {
+
+    background-image: url("../Images/kantarel.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    grid-row: span 2;
+    
+}
+
+.article5 {
+
+    background-image: url("../Images/kakao.jpg");
+    background-size: cover;
+    background-position: right;
+    min-height: 400px;
+
+}
+
+.article6 {
+
+    background-image: url("../Images/boriskogen.jpg");
+    background-size: cover;
+    background-position: bottom;
+    min-height: 400px;
+    
+}
+
+/*Footer*/
+.wrapperlabel {
+
+    padding-bottom: 10rem;
+
+}
+
+footer {
+
+   min-height: 200px;
+    
+}
+
+footer h4 {
+
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+input {
+
+    padding: 1rem;
+    width: 30rem;
+    background-color: #020203;
+    border: 2px solid #E19728;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.centerbox {
+
+    text-align: center;
+
+}
+
+footer button {
+
+    height: 3rem;
+    background-color: #E19728;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 3.35rem;
+    font-size: 1rem;
+
+}
+
+footer h5 {
+
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+footer .kontakt {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1rem;
+    
+}
+
+.kontakt a {
+
+   color: #E19728;
+   text-decoration: none;
+   font-size: 1.5rem;
+
+}
+
+.avsluttingside img {
+
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .s1 {
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+}
+
+/*mellom størrelse for håndtering av tekst og bilde*/
+@media only screen and (max-width: 1100px) {
+
+    .s1 {
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+
+    .s1 div {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+    
+    }
+    
+    .s1 .hoyere {
+
+        padding-left: 0rem;
+        border-top: 1.5px solid #E19728;
+        border-left: none;
+        padding-top: 3rem;
+    }
+
+    .s1 .venstre {
+
+        font-size: 1.7rem; 
+    }
+
+}
+
+/*ipad*/
+/*section 1*/
+@media only screen and (max-width: 768px) {
+
+   .hederbilde {
+
+        height: 410px;
+   }
+    
+   main h2 {
+    
+        font-size: 2rem;
+        width: 40%;
+        left: 30%;
+    }
+
+    .venstestilt > a {
+    
+        padding-right: 68px;
+    }
+
+    nav > a {
+
+        padding: 20px 60px 10px 1px;
+    
+    }
+
+}
+
+/*section 2*/
+@media only screen and (max-width: 768px) {
+
+    .intoduksjon {
+
+        width: 235px;
+        height: 300px;
+
+    }
+
+    .intoduksjon h3 {
+
+        padding-top: 48px; 
+
+    }
+
+    .intoduksjon p {
+
+        width: 148px;
+        font-size: 14px;
+        height: 300px;
+        margin: 22px 42px;
+
+    }
+
+}
+
+
+/*section 3*/
+@media only screen and (max-width: 768px) {
+
+    .s3 {
+
+        grid-gap: 0;
+        margin-top: 4rem;
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/*section 5*/
+@media only screen and (max-width: 768px) {
+
+
+    .s5 {
+
+        padding-left: 0;
+        padding-right: 0;
+       
+    }
+
+    .s5 div {
+
+        grid-template-columns: auto auto;
+    }
+    
+    .s5 .center {
+    
+        border-right: none;
+    }
+
+    .s5 .hoyeresidebilde {
+
+        grid-column: span 2;
+
+    }
+
+    .s5 .venstreside {
+
+        padding-left: 9rem;
+
+    }
+
+}
+
+/*section 6*/
+@media only screen and (max-width: 768px) {
+
+
+    .s6 h2 {
+
+        font-size: 2rem;
+    }
+
+    .s6 .lignende {
+
+        grid-template-rows: auto auto auto;
+        padding-top: 4rem;
+        grid-gap: 20px;
+        justify-content: center;
+    
+    }
+
+    .mat1 {
+    
+        width: 150px;
+        height: 500px;
+       
+    }
+    
+    .mat2 {
+
+        width: 150px;
+        height: 500px;
+       
+    }
+
+    .mat3 {
+
+        width: 150px;
+        height: 500px;  
+
+    }
+
+
+
+}
+
+/*section 7*/
+@media only screen and (max-width: 768px) {
+
+    .s7 {
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+    }
+
+    .instagram {
+
+        grid-gap: 20px;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .article1 {
+
+        min-height: 350px;
+
+    }
+
+    .article2 {
+
+        min-height: 200px;
+
+    }
+
+
+    .article3 {
+
+        min-height: 350px;
+
+    }
+
+    .article4 {
+
+        min-height: 350px;
+
+    }
+
+    .article5 {
+
+        min-height: 200px;
+    }
+
+    .article6 {
+
+        min-height: 200px;
+
+    }   
+
+}
+
+
+
+
+/*mobil*/
+@media (max-width: 520px) {
+    
+    nav a {
+        
+        padding: 20px 20px 10px 20px; 
+        justify-content: center;  
+        
+    }
+
+}  
+
+@media only screen and (max-width: 414px) {
+
+    .hederbilde {
+
+        height: 250px;
+    }
+          
+}
+
+
+
+/*section 1*/
+@media only screen and (max-width: 414px) {
+
+    .s1 {
+
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .s1 .venstre {
+
+        font-size: 1.2rem;
+
+    }
+
+    .s1 h4 {
+
+        font-size: 1.5rem;
+
+    }
+
+
+    .s1 .hoyere {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*section 2*/
+@media only screen and (max-width: 414px) {
+
+    .s2 {
+
+        padding-top: 0; 
+
+    }
+    
+    .intoduksjon {
+    
+        display: none;
+
+    } 
+ 
+}
+
+
+/*section 3*/
+@media only screen and (max-width: 414px) {
+
+    .s3 {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+      
+    }
+    
+
+    .s3 p {
+
+        font-size: 1rem;
+      
+    }
+
+    
+}
+
+
+
+
+/*section 4*/
+@media only screen and (max-width: 414px) {
+
+    .s4 .posisjon {
+
+        padding-top: 2rem;
+        padding-left: 40%;
+
+    }
+
+    .oppskrift h3 {
+
+        font-size: 1rem;
+        padding: 10px 30px;
+        
+    }
+
+    .oppskrift > p {
+
+        padding: 10px 30px;
+        
+    }
+
+    .tyttebor img {
+        
+        width: 75%;
+    }
+
+    
+}
+
+
+
+
+/*section 5*/
+@media only screen and (max-width: 414px) {
+
+    .s5 div {
+      
+        grid-gap: .5rem;
+       
+    }
+
+    .s5 .venstreside {
+        padding-left: 2rem;
+    }
+
+    .hoyeresidebilde {
+      
+        height: 200px;
+    }
+
+    .s5 h3 {
+    
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/*section 6*/
+@media only screen and (max-width: 414px) {
+
+    .s6 {
+
+        margin-left: 2rem; 
+        margin-right: 2rem; 
+        padding-top: 4rem;
+
+    }
+    
+
+
+    .s6 h2 {
+
+        font-size: 1.8rem;
+        height: 0;
+        padding-bottom: 2rem;
+    }
+
+
+    .s6 .lignende {
+
+        padding-top: 2rem;
+        grid-gap: 1rem;
+       
+
+    }
+
+    .mat1 {
+    
+        max-width: 100px;
+        max-height: 200px;
+        
+    
+    }
+    
+
+    .mat2 {
+
+        max-width: 100px;
+        max-height: 200px;
+
+    }
+
+
+    .mat3 {
+
+        max-width: 100px;
+        max-height: 200px;
+
+    }
+  
+}
+
+ /*section 7*/
+ @media only screen and (max-width: 414px) {
+    
+    .s7 {
+        
+        padding-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    
+    }
+
+
+    .s7 h2 {
+    
+        width: 75%;
+        left: 13%;
+        text-align: center;
+        font-size: 1.8rem;
+   
+    }
+    
+}
+
+ 
+/*footer*/
+@media only screen and (max-width: 414px) {
+    
+    .wrapperlabel {
+    
+        padding-bottom: 5rem;
+    
+    }
+    
+}
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h4 {
+    
+        font-size: 1.5rem;
+    
+    
+    }
+    
+}  
+    
+@media only screen and (max-width: 414px) {
+    
+    input {
+    
+        width: 14rem;
+        font-size: 0.8rem;
+
+    }
+    
+}   
+    
+@media only screen and (max-width: 414px) {
+    
+    footer button {
+
+        height: 3rem;
+        width: 5rem;
+        height: 3.24rem;
+        font-size: 0.8rem;
+
+    }
+    
+}
+      
+@media only screen and (max-width: 414px) {
+    
+    .kontakt a {
+    
+        font-size: 0.8em;
+        padding-left: 10px;
+    
+    }
+    
+}
+    
+    
+    
+@media only screen and (max-width: 414px) {
+    
+    footer h5 {
+    
+        font-size: 1em;
+        padding-left: 10px;
+    
+    }
+    
+}
